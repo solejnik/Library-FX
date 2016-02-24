@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.51" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.capgemini.starterkit.solejnik.booksFX.controller.AddBookController">
+  <children>
+    <GridPane layoutX="82.0" layoutY="64.0" prefHeight="90.0" prefWidth="393.0">
+      <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      </columnConstraints>
+      <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="60.0" minHeight="10.0" prefHeight="32.0" vgrow="SOMETIMES" />
+        <RowConstraints maxHeight="28.0" minHeight="0.0" prefHeight="28.0" vgrow="SOMETIMES" />
+      </rowConstraints>
+      <children>
+        <Label text="Title" />
+        <Label text="Author first name" GridPane.rowIndex="1" />
+        <Label text="Author last name" GridPane.rowIndex="2" />
+        <TextField fx:id="bookTitle" GridPane.columnIndex="1" />
+        <TextField fx:id="authorFirstName" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="authorLastName" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      </children>
+    </GridPane>
+    <ButtonBar layoutX="200.0" layoutY="240.0" prefHeight="40.0" prefWidth="200.0">
+      <buttons>
+        <Button fx:id="cancelButton" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" ButtonBar.buttonData="RIGHT" />
+        <Button fx:id="okButton" mnemonicParsing="false" onAction="#okButonAction" prefHeight="31.0" prefWidth="64.0" text="OK" ButtonBar.buttonData="LEFT" />
+      </buttons>
+    </ButtonBar>
+  </children>
+</AnchorPane>

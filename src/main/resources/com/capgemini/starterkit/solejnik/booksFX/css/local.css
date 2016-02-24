@@ -1,0 +1,21 @@
+
+/* defined colors */
+
+
+/* Root of the scene */
+.root {
+}
+
+
+
+
+/* Select using the "selected" pseudo-selector */
+.table-view .table-row-cell:selected {
+	-fx-font-weight: bold;
+	-fx-font-size: 130.0%;
+	-fx-background-color: red;
+}
+
+.label {
+	-fx-font-weight: bold;
+}
